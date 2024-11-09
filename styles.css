@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300..900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);
+    font-family: "Red Hat Display",sans-serif;
+    font-size: 16px;
+
+}
+.card {
+    width:450px;
+    background-color:white;
+    color: var(--desaturated-blue);
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+.title{
+    color:var(--dark-blue);
+    font-weight: 900;
+    font-size: 32px;
+}
+.hi{
+    width:100%;
+}
+.container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.container>*{
+    margin: 13px 0;
+}
+.order-desc{
+    line-height: 25px;
+}
+
+button{
+    width: 100%;
+    font-weight: 700 bold;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 15px;
+    cursor: pointer;  
+}
+.pb{
+    background-color: var(--bright-blue);
+    padding: 1rem 0;
+    color: white;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+   
+}
+.pb:hover{
+    opacity:0.5;
+}
+.cb{
+    background-color: white;
+    color: var(--desaturated-blue);
+    border:none;
+    margin-top: 20px;
+    
+}
+.cb:hover{
+    color: black;
+}
+.pcont{
+    font-size: 15px;
+    background-color: var(--very-pale-blue);
+    padding: 25px;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.pcont a{
+    color: var(--bright-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+.pcont a:hover{
+    opacity: 0.8;
+
+}
+.pdesc{
+    line-height: 23px;
+    margin-right: 75px;
+}
